@@ -12,6 +12,12 @@ Problems in having provider gems for integration
 5. State parameters can be introduced.
 6. Can control saving session information after authentication. (through :provder_ignores_state parameter)
 
+Eg. With the recent release of Google omniauth oauth2 gem jwt token validation and image details exclusion is done. This can be controlled by making these parameters as optional as shown below.
+
+option :skip_image_info, true
+      option :skip_jwt, false
+      option :jwt_leeway, 60
+
 The above mentioned problems can be easily controlled through this architecture.
 
 Simply introduce a .rb file for integrations under omniauth/strategies directory.
