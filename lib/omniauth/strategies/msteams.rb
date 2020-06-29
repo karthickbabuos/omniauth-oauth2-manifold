@@ -8,8 +8,8 @@ require 'omniauth/strategies/oauth2'
 
        option :client_options, {
         :site => 'https://login.microsoftonline.com',
-        :authorize_url => '/common/oauth2/v2.0/authorize',
-        :token_url => '/common/oauth2/v2.0/token'
+        :authorize_url => 'https://login.microsoftonline.com/common/oauth2/v2.0/authorize',
+        :token_url => 'https://login.microsoftonline.com/common/oauth2/v2.0/token'
       }
 
        option :provider_ignores_state, true
